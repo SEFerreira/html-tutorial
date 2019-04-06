@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    
+
     <style>
         .link-style {
             color: blue;
             cursor: pointer;
             text-decoration: underline;
         }
-        table, th, td {
+
+        table,
+        th,
+        td {
             border: 1px solid black;
         }
-        
+
         hello {
             color: blue;
         }
@@ -41,7 +44,7 @@
     <p>
         <a href="#enrolment details">Nursing Course Enrolment Guidelines</a>
     </p>
-    <img src="assets/shutterstock_305642564.jpg" alt="A Nurse Looking after a patient">
+    <img src="assets/img/shutterstock_305642564.jpg" alt="A Nurse Looking after a patient">
     <p> View More Nursing
         <a href="http://3o15h033zmpwracwx2i00rqx.wpengine.netdna-cdn.com/wp-content/uploads/2015/09/Nurse.jpg"
             target="_blank"> Photos</a>
@@ -50,25 +53,52 @@
         With their years of health education, nurses know how to assess patients. When nurses notice a deterioration in
         their health, they make a rescue plan. In between all this surveillance and intervention, nurses educate their
         patients.</p>
-    <img src="assets/shutterstock_102978938.jpg" id="enrolment details" Nursing Course Enrolment Guidelines
-        alt="Nursing Study Textbooks">
 
-    <table>
-        <tr>
-            <th>Header 1</th>
-            <th>Header 2</th>
-            <th>Header 3</th>
-            <th>Header 4</th>
-            <th>Header 5</th>
-        </tr>
-        <tr>
-            <td>Row 1 Column 1</td>
-            <td>Row 1 Column 2</td>
-            <td>Row 1 Column 3</td>
-            <td>Row 1 Column 4</td>
-            <td>Row 1 Column 5</td>
-        </tr>
-    </table>
+    <form action="/submit-email-address">
+        <p>Question 1: Do you have a genuine caring and loving personality?</p>
+        <label>
+            <input type="radio" name="yes" checked>
+            YES
+        </label>
+        <label><input type="radio" name="no">
+            NO</label><br>
+        <!--Question 2: Does medicine entice you and do you want to further a career in it? -->
+        <label>
+            <input type="checkbox" name="yes" checked>
+            YES
+        </label>
+        <label><input type="checkbox" name="no">
+            NO</label>
+        <br>
+        <a href="#yes">Yes Link</a>
+        <label for="yes">
+            <input id="yes" type="radio" name="do-you-have-a-caring-personality">
+        </label>
+        <!-- For disabled people 
+                <label for="yes"><input id="yes" type="radio" name="do-you-have-a-caring-personality"> 
+        YES</label>
+    <label for="no"><input id="no" type="radio" name="do-you-have-a-caring-personality"> 
+        NO</label>-->
+
+        <img src="assets/img/shutterstock_102978938.jpg" id="enrolment details" Nursing Course Enrolment Guidelines
+            alt="Nursing Study Textbooks">
+
+        <table>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+                <th>Header 4</th>
+                <th>Header 5</th>
+            </tr>
+            <tr>
+                <td>Row 1 Column 1</td>
+                <td>Row 1 Column 2</td>
+                <td>Row 1 Column 3</td>
+                <td>Row 1 Column 4</td>
+                <td>Row 1 Column 5</td>
+            </tr>
+        </table>
 </body>
 
 </html>
